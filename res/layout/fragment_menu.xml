@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray" >
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/icon_bottom" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/iv_logo"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_user_bg"
+                android:orientation="horizontal"
+                android:padding="20dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_home" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/slide_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="4dp"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_update"
+                style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_update"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_update" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_update"
+                    android:text="更新数据" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_setting"
+                style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_setting" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_setting"
+                    android:text="设置" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_about"
+                style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_about"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_about" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_about"
+                    android:text="关于" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_logout"
+                style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_logout"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_logout" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_logout"
+                    android:text="退出登录" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">网络通讯录</string>
+    <string name="title_activity_download">DownloadActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_content">ContentActivity</string>
+    <string name="title_activity_call">CallActivity</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="blue">#ff1869af</color>
+    <color name="grey">#ff5b5a5a</color>
+    <color name="light_gray">#ffebebeb</color>
+    <color name="deep_gray">#ff3b3b3b</color>
+    <color name="grey_title">#EBECE4</color>
+    <!-- 灰白色 标题颜色 -->
+    <color name="black_text">#434343</color>
+ <!-- 黑色 字体颜色 -->
+ <color name="light_blue">#4194dc</color>
+
+
+</resources>

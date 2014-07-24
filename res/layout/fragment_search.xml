@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/search"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp" >
+
+        <EditText
+            android:id="@+id/search_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/search_in"
+            android:hint="关键字搜索"
+            android:singleLine="true"
+            android:textColor="@color/grey"
+            android:textCursorDrawable="@drawable/title_bar_bg"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_button"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/call_title"
+        android:layout_marginTop="10dp"
+        android:divider="#dddddd"
+        android:dividerHeight="1px" />
+
+</LinearLayout>
